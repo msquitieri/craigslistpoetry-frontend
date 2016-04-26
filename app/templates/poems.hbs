@@ -1,0 +1,12 @@
+<h1>Poems</h1>
+
+{{#each model as |poem|}}
+  <div class="poem">
+    <h4>Poem #{{poem.id}}</h4>
+    <ul class="lines">
+      {{#each poem.lines as |line|}}
+        <li>{{line}}</li>
+      {{/each}}
+    </ul>
+  </div>
+{{/each}}
