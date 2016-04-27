@@ -1,1 +1,32 @@
-{{outlet}}
+<header id='nav'>
+  <span id='title'>Craigslist Poetry</span>
+  <ul>
+    <li href="#create">Create</li>
+    <li href="#read">Read</li>
+    <li href="#follow">Follow</li>
+  </ul>
+</header>
+<div id='main'>
+  <section id='create'>
+    <h1>We create poetry from NYC Craigslist Missed Connections Posts</h1>
+    <button id='create-new-button' class='button'>Generate New Poem</button>
+    <span id='how-popup'><a href='#'>How do we generate poems?</a></span>
+  </section>
+  <section id='read'>
+
+    {{outlet}}
+
+  </section>
+  <section id='follow'>
+    <h1>Poetry to your timeline every 2 hours.</h1>
+    <div id='twitter-holder'>
+      <a class="twitter-timeline" href="https://twitter.com/craigslistpoems" data-widget-id="359892455409201155">Tweets by @craigslistpoems</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </section>
+</div>
+<footer>
+  <p>Made in Brooklyn</p>
+  <span>An <a href='http://www.twitter.com/msquiggs'>@msquiggs</a> production</span>
+  <!-- <span>Created by <a href='http://www.twitter.com/msquiggs'>@msquiggs</a></span> -->
+</footer>
