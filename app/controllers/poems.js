@@ -11,7 +11,7 @@ export default Ember.Controller.extend({
 
   actions: {
     displayPoem(poem) {
-      console.log(poem.id);
+      this.transitionToRoute('poem', poem);
     },
 
     loadMorePoems() {

@@ -6,8 +6,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('poems', {
-    path: '/'
+  this.route('poems', { path: '/'}, function() {
+    this.route('poem', { path: '/poems/:id', resetNamespace: true });
   });
 });
 

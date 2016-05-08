@@ -1,0 +1,29 @@
+<!-- Begin Hidden Modal -->
+<div id='hidden-poem-modal' class=''>
+  <div id='poem-modal' class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Poem #{{model.id}}</h4>
+        </div>
+        <div class="modal-body">
+          {{#each model.lines as |line|}}
+            <p>{{{line}}}</p>
+          {{/each}}
+        </div>
+        <div class="modal-footer">
+          <div id='share-holder'>
+            Share:
+            <span id='facebook-share-holder'><button id='facebook-share-button' class='share-button'>Facebook</button></span>
+            <span id='twitter-tweet-holder'></span>
+            <span id='google-plus-holder'><!--<g:plus action='share'></g:plus>--></span>
+            <span id='permalink-holder'><button id='permalink-button' class='share-button'>Permalink</button></span>
+          </div>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div><!-- /#hidden-poem-modal -->
+<!-- End Hidden Modal -->
