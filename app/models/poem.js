@@ -10,6 +10,10 @@ export default DS.Model.extend({
   }),
 
   getPreviewText(maxLength=100) {
+    if (!this.get('lines') || this.get('lines.length') === 0) {
+      return '';
+    }
+
     let cleanedLines = this.get('lines').map((line) => {
       line = line + '';
       line = line.replace(/<br>/g, ' ');
