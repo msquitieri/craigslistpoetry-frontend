@@ -1,0 +1,41 @@
+footer {
+  background-color: rgb(100, 100, 100);
+  color: white;
+  height: 110px;
+  box-shadow: 0px 0px 10px rgb(66, 66, 66);
+
+  p {
+    text-align: center;
+    padding-top: 25px;
+    font-family: Masterics;
+    font-size: 30pt;
+    display: block;
+  }
+
+  //span {
+  //  float: right;
+  //  background-color: black;
+  //  padding: 4px 12px;
+  //  font-family: EBGaramond;
+  //  border: 1px dashed;
+  //}
+
+  span {
+    font-family: EBGaramond;
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      font-style: italic;
+      color: black;
+    }
+  }
+}
+

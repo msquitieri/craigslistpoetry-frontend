@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: Masterics;
+  src: url('../fonts/Masterics.ttf'),
+  url('../fonts/Masterics.eot');
+}
+
+@font-face {
+  font-family: EBGaramond;
+  src: url('../fonts/EBGaramond.ttf'),
+  url('../fonts/EBGaramond.eot');
+}
+
+body {
+  background-color: rgb(243,243,243);
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+#main {
+  margin: auto;
+}
+
+.text-wrapper { width: 75%; }
+.hidden { display: none; }
+
+h1 {
+  margin: auto;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+  font-size: 31pt;
+  margin: 3em 0px 2em 0px;
+}

@@ -1,0 +1,49 @@
+#nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+  height: 60px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgb(119,119,119);
+
+  span {
+    color: black;
+    font-family: Masterics;
+    font-size: 45pt;
+    position: relative;
+    left: 15px;
+    top: 10px;
+  }
+
+  ul {
+    float: right;
+    list-style-type: none;
+    margin-right: 15px;
+
+    li {
+      display: inline-block;
+      background-color: black;
+      color: white;
+      font-family: Masterics;
+      font-size: 31pt;
+      margin-right: 5px;
+      padding: 14px 20px 0px 10px;
+      border: 1px dashed black;
+      height: 44px;
+      cursor: pointer;
+      /* transition: all 0.2s; */
+      transition: color 0.2s, background-color 0.2s;
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
+
+#title {
+  float: left;
+  cursor: pointer;
+}

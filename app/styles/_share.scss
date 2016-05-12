@@ -1,0 +1,54 @@
+#twitter-holder {
+  text-align: center;
+}
+
+#share-holder {
+  float: left;
+}
+
+#twitter-tweet-holder {
+  position: relative;
+  top: 5px;
+  left: 7px;
+}
+
+#facebook-share-holder {
+  margin-left: 4px;
+}
+
+.share-button {
+  padding: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+}
+
+#facebook-share-button {
+  background-color: #3b5998;
+  font-family: "Lucida Grande", sans-serif;
+
+  &:hover {
+    background-color: #2d4881;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+#permalink-holder {
+  margin-left: 15px;
+}
+
+#permalink-button {
+  background-color: rgb(105, 96, 96);
+
+  &:hover {
+    background-color: rgb(73, 65, 65);
+  }
+}
+
+#permalink {
+  color: black;
+}

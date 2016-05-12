@@ -1,0 +1,23 @@
+#create-new-button, #get-more-poems-button {
+  display: block;
+  margin: auto;
+}
+
+.button {
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  /* box-shadow: 1px 1px 1px black; */
+  font-size: 14pt;
+  background-color: rgb(170,170,170);
+  border-radius : 7px;
+
+  &:active {
+    position: relative;
+    top: 2px;
+  }
+
+  &:hover {
+    background-color: rgb(100,100,100);
+  }
+}

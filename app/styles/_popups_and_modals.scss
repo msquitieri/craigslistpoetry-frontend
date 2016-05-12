@@ -1,0 +1,28 @@
+#how-popup {
+  display: block;
+  margin: auto;
+  padding-top: 2em;
+  text-align: center;
+  font-size: 11pt;
+  /*
+  text-decoration: underline;
+  cursor: pointer;
+  */
+
+  a {
+    color: black;
+  }
+}
+
+.popover-content {
+  font-size: 12pt;
+}
+
+.modal-body {
+  line-height: 25px;
+}
+
+#hidden-poem-modal {
+  font-family: EBGaramond;
+  font-size: 14pt;
+}
