@@ -10,3 +10,19 @@ test('it exists', function(assert) {
   // let store = this.store();
   assert.ok(!!model);
 });
+
+// TODO: Get this working...
+// test('previewText', function(assert) {
+//   let model = this.subject();
+//   let lines = [
+//     'Hello there',
+//     'My name is',
+//     'Michael',
+//     'what is yours'
+//   ];
+//
+//   model.set('lines', lines);
+//
+//   let previewText = 'Hello there / My name is / Michael / what is yours';
+//   assert.equal(model.get('previewText'), previewText);
+// });
