@@ -5,7 +5,9 @@ export default Ember.Controller.extend({
 
   actions: {
     createNewPoem() {
-      return this.store.createRecord('poem').save();
+      return this.store.createRecord('poem').save().then((poem) => {
+        this.send('displayPoem', poem);
+      });
     },
 
     scrollTo(selector) {

@@ -10,10 +10,6 @@ export default Ember.Controller.extend({
   }),
 
   actions: {
-    displayPoem(poem) {
-      this.transitionToRoute('poem', poem);
-    },
-
     loadMorePoems() {
       let nextPage = this.get('page') + 1;
       this.set('page', nextPage);
