@@ -15,7 +15,9 @@
         <div class="modal-footer">
           <div id='share-holder'>
             Share:
-            <span id='facebook-share-holder'><button id='facebook-share-button' class='share-button'>Facebook</button></span>
+            <span id='facebook-share-holder'>
+              <button {{action 'facebookShare'}} id='facebook-share-button' class='share-button'>Facebook</button>
+            </span>
             <span id='twitter-tweet-holder'></span>
             <span id='google-plus-holder'><!--<g:plus action='share'></g:plus>--></span>
             <span id='permalink-holder'>
