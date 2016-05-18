@@ -18,7 +18,11 @@
             <span id='facebook-share-holder'><button id='facebook-share-button' class='share-button'>Facebook</button></span>
             <span id='twitter-tweet-holder'></span>
             <span id='google-plus-holder'><!--<g:plus action='share'></g:plus>--></span>
-            <span id='permalink-holder'><button id='permalink-button' class='share-button'>Permalink</button></span>
+            <span id='permalink-holder'>
+              <button id='permalink-button' class='share-button'>
+                {{bs-popover text='Permalink' placement='top' content=shareUrlAnchorTag}}
+              </button>
+            </span>
           </div>
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>

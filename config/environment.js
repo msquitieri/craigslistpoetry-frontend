@@ -6,6 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    defaultHost: 'http://craigslistpoetry.com',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -25,6 +26,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.defaultHost = 'http://localhost:4200';
   }
 
   if (environment === 'test') {
@@ -37,10 +39,11 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+    ENV.defaultHost = 'http://localhost:4200';
   }
 
   if (environment === 'production') {
-
+    ENV.defaultHost = 'http://craigslistpoetry.com';
   }
 
   return ENV;
