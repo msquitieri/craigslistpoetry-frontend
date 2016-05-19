@@ -30,7 +30,7 @@ export default Ember.Component.extend({
     let defaultHost = ENV.defaultHost;
 
     let url = `${defaultHost}/poems/${poemId}`;
-    let elem = this.$('#twitter-tweet-holder').get(0);
+    let elem = this.$('.twitter-tweet-holder').get(0);
     let text = this.get('poem').getPreviewText(90) + '...';
 
     twttr.widgets.createShareButton(url, elem,

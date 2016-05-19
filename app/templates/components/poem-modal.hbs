@@ -13,15 +13,14 @@
           {{/each}}
         </div>
         <div class="modal-footer">
-          <div id='share-holder'>
+          <div class='share-holder'>
             Share:
-            <span id='facebook-share-holder'>
-              <button {{action 'facebookShare'}} id='facebook-share-button' class='share-button'>Facebook</button>
+            <span class='facebook-share-holder'>
+              <button {{action 'facebookShare'}} class='facebook share-button'>Facebook</button>
             </span>
-            <span id='twitter-tweet-holder'></span>
-            <span id='google-plus-holder'><!--<g:plus action='share'></g:plus>--></span>
-            <span id='permalink-holder'>
-              <button id='permalink-button' class='share-button'>
+            <span class='twitter-tweet-holder'></span>
+            <span class='permalink-holder'>
+              <button class='permalink share-button'>
                 {{bs-popover text='Permalink' placement='top' content=shareUrlAnchorTag}}
               </button>
             </span>
