@@ -2,11 +2,16 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   scroller: Ember.inject.service(),
+  creatingPoem: false,
 
   actions: {
     createNewPoem() {
+      this.set('creatingPoem', true);
+
       return this.store.createRecord('poem').save().then((poem) => {
         this.send('displayPoem', poem);
+
+        this.set('creatingPoem', false);
       });
     },
 

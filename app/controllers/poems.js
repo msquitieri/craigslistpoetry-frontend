@@ -14,7 +14,11 @@ export default Ember.Controller.extend({
       let nextPage = this.get('page') + 1;
       this.set('page', nextPage);
 
-      this.store.query('poem', { page: nextPage });
+      this.set('loadingMorePoems', true);
+
+      this.store.query('poem', { page: nextPage }).then(() => {
+        this.set('loadingMorePoems', false);
+      });
     }
   }
 });

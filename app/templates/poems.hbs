@@ -4,6 +4,12 @@
     <li {{action 'displayPoem' poem}}>{{poem.previewText}}</li>
   {{/each}}
 </ul>
-<button {{action 'loadMorePoems'}} id='get-more-poems-button' class='button'>Load More Poems</button>
+<button {{action 'loadMorePoems'}} id='get-more-poems-button' class='button'>
+  {{#if loadingMorePoems}}
+    {{loading-spinner}}
+  {{else}}
+    Load More Poems
+  {{/if}}
+</button>
 
 {{outlet}}

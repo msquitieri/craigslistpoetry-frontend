@@ -9,7 +9,13 @@
 <div id='main'>
   <section id='create'>
     <h1>We create poetry from NYC Craigslist Missed Connections Posts</h1>
-    <button {{action 'createNewPoem'}} id='create-new-button' class='button'>Generate New Poem</button>
+    <button {{action 'createNewPoem'}} id='create-new-button' class='button'>
+      {{#if creatingPoem}}
+        {{loading-spinner}}
+      {{else}}
+        Generate New Poem
+      {{/if}}
+    </button>
     {{how-to-message}}
   </section>
   <section id='read'>
