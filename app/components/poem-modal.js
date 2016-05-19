@@ -13,6 +13,8 @@ export default Ember.Component.extend({
     this.$('#poem-modal').on('hidden.bs.modal', () => {
       this.sendAction('onModalClose');
     });
+
+    this.loadTwitterShareButton();
   },
 
   willDestroyElement() {
@@ -21,6 +23,26 @@ export default Ember.Component.extend({
 
   didRender() {
     this.$('#poem-modal').modal('show');
+  },
+
+  loadTwitterShareButton() {
+    let poemId = this.get('poem.id');
+    let defaultHost = ENV.defaultHost;
+
+    let url = `${defaultHost}/poems/${poemId}`;
+    let elem = this.$('#twitter-tweet-holder').get(0);
+    let text = this.get('poem').getPreviewText(90) + '...';
+
+    twttr.widgets.createShareButton(url, elem,
+      function (e1) {
+        console.log("Button Created");
+      },
+      {
+        count : "none",
+        text : text,
+        via : "craigslistpoems"
+      }
+    );
   },
 
   actions: {
