@@ -13,18 +13,8 @@
           {{/each}}
         </div>
         <div class="modal-footer">
-          <div class='share-holder'>
-            Share:
-            <span class='facebook-share-holder'>
-              <button {{action 'facebookShare'}} class='facebook share-button'>Facebook</button>
-            </span>
-            <span class='twitter-tweet-holder'></span>
-            <span class='permalink-holder'>
-              <button class='permalink share-button'>
-                {{bs-popover text='Permalink' placement='top' content=shareUrlAnchorTag}}
-              </button>
-            </span>
-          </div>
+          {{share-section poem=poem}}
+
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div><!-- /.modal-content -->
