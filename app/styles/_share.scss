@@ -21,6 +21,7 @@
   border-radius: 3px;
   cursor: pointer;
   color: white;
+  font-size: 8pt;
 }
 
 #facebook-share-button {
@@ -43,6 +44,8 @@
 
 #permalink-button {
   background-color: rgb(105, 96, 96);
+  vertical-align: middle;
+  padding: 2px 6px;
 
   &:hover {
     background-color: rgb(73, 65, 65);
