@@ -41,6 +41,15 @@
     <link rel="shortcut icon" type="image/png" href="/images/logo_small.png">
     <link rel="apple-touch-icon" type="image/png" href="/images/logo_small.png">
 
+    <script type="text/javascript">
+      if (window.location.href.indexOf('poem.php') !== -1) {
+        var id = window.location.search.substring(1).replace('id=', '');
+        if (id) {
+          window.location.href = '/poems/' + id;
+        }
+      }
+    </script>
+
     {{content-for 'head'}}
 
     <link rel="stylesheet" href="assets/vendor.css">
