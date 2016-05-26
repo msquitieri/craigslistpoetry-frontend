@@ -18,6 +18,29 @@
 
 .modal-body {
   line-height: 25px;
+  margin: 20px 50px;
+  padding: 0px;
+}
+
+.next-poem-button,
+.previous-poem-button {
+  position: absolute;
+  top: 50%;
+
+  color: #000000;
+  background-color: #ffffff;
+
+  &:hover {
+    color: gray;
+  }
+}
+
+.next-poem-button {
+  right: 10px;
+}
+
+.previous-poem-button {
+  left: 10px;
 }
 
 #hidden-poem-modal {
