@@ -12,6 +12,10 @@
             <p>{{{line}}}</p>
           {{/each}}
         </div>
+
+        <button {{action 'goToPreviousPoem' }} class="previous-poem-button"><span class="glyphicon glyphicon-menu-left"></span></button>
+        <button {{action 'goToNextPoem'}} class="next-poem-button"><span class="glyphicon glyphicon-menu-right"></span></button>
+
         <div class="modal-footer">
           {{share-section poem=poem}}
 
