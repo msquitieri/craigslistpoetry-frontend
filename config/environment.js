@@ -49,5 +49,7 @@ module.exports = function(environment) {
     ENV.apiHost = 'http://api.craigslistpoetry.com';
   }
 
+  ENV.apiKey = 'a3efb693fa2a6c4990cbef9291074b';
+
   return ENV;
 };

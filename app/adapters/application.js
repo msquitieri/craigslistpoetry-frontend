@@ -6,6 +6,6 @@ export default DS.RESTAdapter.extend({
   namespace: 'api/v1',
 
   headers: {
-    'X-api-key': 'funfunfun'
+    'X-api-key': ENV.apiKey
   }
 });
