@@ -6,6 +6,10 @@ export default Ember.Controller.extend({
 
   actions: {
     createNewPoem() {
+      if (this.get('creatingPoem')) {
+        return;
+      }
+
       this.set('creatingPoem', true);
 
       return this.store.createRecord('poem').save().then((poem) => {

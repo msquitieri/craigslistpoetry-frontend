@@ -27,6 +27,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
     ENV.defaultHost = 'http://localhost:4200';
+    ENV.apiHost = 'http://localhost:3000';
   }
 
   if (environment === 'test') {
@@ -40,11 +41,15 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
     ENV.defaultHost = 'http://localhost:4200';
+    ENV.apiHost = 'http://localhost:3000';
   }
 
   if (environment === 'production') {
     ENV.defaultHost = 'http://craigslistpoetry.com';
+    ENV.apiHost = 'http://api.craigslistpoetry.com';
   }
+
+  ENV.apiKey = 'a3efb693fa2a6c4990cbef9291074b';
 
   return ENV;
 };
