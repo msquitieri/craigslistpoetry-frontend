@@ -11,6 +11,10 @@ export default Ember.Controller.extend({
 
   actions: {
     loadMorePoems() {
+      if (this.get('loadingMorePoems')) {
+        return;
+      }
+
       let nextPage = this.get('page') + 1;
       this.set('page', nextPage);
 
