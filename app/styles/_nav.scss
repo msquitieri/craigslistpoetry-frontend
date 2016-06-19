@@ -17,6 +17,12 @@
   }
 
   ul {
+    display: none;
+
+    @include breakpoint(xs) {
+      display: block;
+    }
+
     float: right;
     list-style-type: none;
     margin-right: 15px;

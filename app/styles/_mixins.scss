@@ -1,0 +1,45 @@
+@mixin breakpoint($sizing) {
+
+  @if $sizing == xs {
+    @media (min-width: 500px) {
+      @content;
+    }
+  }
+
+  @if $sizing == sm {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $sizing == md {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $sizing == lg {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $sizing == xl {
+    @media (min-width: 1201px) and (max-width: 1400px) {
+      @content;
+    }
+  }
+
+  @if $sizing == xxl {
+    @media (min-width: 1401px) and (max-width: 1600px) {
+      @content;
+    }
+  }
+
+  @if $sizing == xxxl {
+    @media (min-width: 1601px) {
+      @content;
+    }
+  }
+
+}
