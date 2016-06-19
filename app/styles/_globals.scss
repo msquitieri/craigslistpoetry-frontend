@@ -33,12 +33,16 @@ section {
 .hidden { display: none; }
 
 h1 {
-  margin: auto;
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 100;
   font-size: 31pt;
-  margin: 3em 0px 2em 0px;
+
+  margin: 3em 15px 2em 15px;
+
+  @include breakpoint(xs) {
+    margin: 3em 0px 2em 0px;
+  }
 }
 
 .fa-spin-custom, .glyphicon-spin {
