@@ -10,8 +10,8 @@
   padding: 15px;
   /* box-shadow: 1px 1px 1px black; */
   font-size: 14pt;
-  background-color: rgb(170,170,170);
-  border-radius : 7px;
+  background-color: rgb(170, 170, 170);
+  border-radius: 7px;
 
   &:active {
     position: relative;
@@ -19,6 +19,15 @@
   }
 
   &:hover {
-    background-color: rgb(100,100,100);
+    background-color: rgb(100, 100, 100);
+  }
+}
+
+button {
+  &.close {
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    font-size: 32pt;
   }
 }
