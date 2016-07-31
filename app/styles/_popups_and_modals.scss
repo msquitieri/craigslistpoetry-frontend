@@ -16,9 +16,19 @@
   }
 }
 
+.modal-dialog {
+  margin: 0;
+  background: white;
+
+  @include breakpoint(xs) {
+    margin: 30px auto;
+    background: inherit;
+  }
+}
+
 .modal-body {
   line-height: 25px;
-  margin: 20px 50px;
+  margin: 20px 40px;
   padding: 0px;
 }
 
