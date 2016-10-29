@@ -4,10 +4,10 @@ export default Ember.Route.extend({
   notifications: Ember.inject.service('notification-messages'),
 
   actions: {
-    sendNotification(message) {
+    sendNotification(message, onClick) {
       this.get('notifications').success(message, {
         autoClear: true,
-        clearDuration: 2000
+        onClick
       });
     },
 

@@ -28,6 +28,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
     ENV.defaultHost = 'http://localhost:4200';
     ENV.apiHost = 'http://localhost:3000';
+    ENV.websocketUrl = 'ws://localhost:3000/poems';
   }
 
   if (environment === 'test') {
@@ -47,9 +48,8 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.defaultHost = 'http://craigslistpoetry.com';
     ENV.apiHost = 'http://api.craigslistpoetry.com';
+    ENV.websocketUrl = 'ws://stream.craigslistpoetry.com/poems';
   }
-
-  ENV.apiKey = 'a3efb693fa2a6c4990cbef9291074b';
 
   return ENV;
 };
